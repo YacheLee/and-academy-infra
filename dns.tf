@@ -22,7 +22,6 @@ resource "aws_route53_record" "main-txt" {
 
 resource "aws_route53_record" "ya-che" {
   name = "ya.dekker-and.digital"
-  zone_id = aws_route53_zone.club-dns.id
   type = "NS"
   ttl = 900
   records = [
